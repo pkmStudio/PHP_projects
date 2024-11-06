@@ -12,8 +12,9 @@
 Ниже (см.фото) ты увидишь текущий план работ. Он не окончательный и будет дополняться. 
 
 # Стадия проекта: Завершен. (2023г.)
-Доступно по ссылке: https://pkmstudio.github.io/PHP_projects/Blog_PHP/FrontendBlogSite/index.html
-Доступно по ссылке: https://pkmstudio.github.io/PHP_projects/Blog_PHP/FrontendBlogSite/addPost.html
+Доступно по ссылке: https://pkmstudio.github.io/PHP_projects/Blog/FrontendBlogSite/index.html
+#
+Доступно по ссылке: https://pkmstudio.github.io/PHP_projects/Blog/FrontendBlogSite/addPost.html
 
 ## Что сделано?
 

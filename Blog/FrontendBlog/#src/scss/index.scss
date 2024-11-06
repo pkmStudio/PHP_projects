@@ -1,0 +1,145 @@
+// ============
+// Представление
+// ============
+.greetings {
+   height: calc(100vh - 100px);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   gap: 40px 0;
+   @include adaptiv-value(margin-bottom, 50, 30, 1);
+
+   // .greetings__content
+   &__content {
+      @media (max-width: $md3 + px) {
+         margin-bottom: 27px;
+      }
+   }
+
+   // .greetings__title
+   &__title {
+      @include adaptiv-value(margin-bottom, 40, 20, 1);
+   }
+
+   // .greetings__text
+   &__text {
+   }
+
+   // .greetings__button
+   &__button {
+      align-self: flex-start;
+      
+      @media (max-width: $md3 + px) {
+         align-self: center;
+      }
+   }
+}
+
+.content-greetings {
+   display: flex;
+   gap: 0 12%; /* 108/900 */
+   align-items: center;
+   @media (max-width: $md3 + px) {
+      flex-direction: column-reverse;
+   }
+
+   // .content-greetings__text-content
+   &__text-content {
+      flex: 1 1 75%; /* 600/800 */
+   }
+
+   // .content-greetings__photo
+   &__photo {
+      flex: 1 1 25%;
+      text-align: center;
+
+      @media (max-width: $md3 + px) {
+         flex: 0 0 auto;
+         width: 45.789474%; /* 174/380 */
+         margin-bottom: 34px;
+      }
+   }
+}
+
+// ============
+// Голова секций
+// ============
+
+.section-head {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+// .section-head__title
+&__title {
+   @include adaptiv-font (22, 18, 1);
+   vertical-align:baseline; //middle
+   line-height: 60px;
+}
+
+// .section-head__link
+&__link {
+   font-size: 16px;
+   color: #00A8CC;
+   transition: all 0.3s ease;
+   &:hover {
+      color: #007f9c;
+   }
+}
+}
+
+// ============
+// Последние посты
+// ============
+
+.recent-posts {
+   margin: 0 -15px;
+   padding: 0 15px;
+   background-color: #EDF7FA;
+   @include adaptiv-value(margin-bottom, 50, 30, 1);
+
+   // .recent-posts__head
+   &__head {
+      margin-bottom: 10px;
+   }
+
+   // .recent-posts__content
+   &__content {
+      display: flex;
+      justify-content: space-between;
+
+      @media (max-width: $md3 + px) {
+         flex-direction: column
+      }
+   }
+
+   // .recent-posts__post
+   &__post {
+      width: 48%; /* 414/900 */
+      margin-bottom: 30px;
+
+      @media (max-width: $md3 + px) {
+         width: 100%;
+      }
+   }
+}
+
+// ============
+// Лучшие работы
+// ============
+
+.best-works {
+   @include adaptiv-value(margin-bottom, 50, 30, 1);
+
+   // .best-works__head
+   &__head {
+      margin-bottom: 20px;
+   }
+
+   // .best-works__work
+   &__work {
+      &:not(:last-child) {
+         margin-bottom: 30px;
+      }
+   }
+}

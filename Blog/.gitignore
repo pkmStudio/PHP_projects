@@ -1,0 +1,6 @@
+/FrontendBlog/node_modules
+/FrontendBlog/gulp
+/FrontendBlog/*.js
+/FrontendBlog/*.json
+/FrontendBlog/howtouse.txt
+/BackendBlog/.vscode
